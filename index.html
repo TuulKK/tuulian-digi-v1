@@ -137,6 +137,11 @@
       justify-content: center;
       padding: 8rem 4rem 4rem 4rem;
       position: relative;
+      background-color: var(--simpukka);
+      background-image:
+        radial-gradient(ellipse 80% 60% at 0% 30%, rgba(255,232,220,0.55), transparent 70%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Cfilter id='p'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.18' numOctaves='3' stitchTiles='stitch' seed='5'/%3E%3CfeColorMatrix values='0 0 0 0 0.95  0 0 0 0 0.85  0 0 0 0 0.78  0 0 0 0.5 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23p)'/%3E%3C/svg%3E");
+      background-blend-mode: normal, multiply;
     }
 
     .hero-eyebrow {
