@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studio Aina – Tarinasi näkyväksi.</title>
-  <meta name="description" content="Studio Aina on helsinkiläinen yhden tekijän studio. Valokuva, taitto ja brändiajattelu samasta kädestä – selkeästi, ajallaan, sinun näköisesti.">
+  <meta name="description" content="Studio Aina on helsinkiläinen yhden tekijän studio. Valokuva, verkkosivut ja brändiajattelu samasta kädestä – selkeästi, ajallaan, sinun näköisesti.">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,900&family=Karla:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <style>
@@ -50,10 +50,22 @@
       letter-spacing: -0.02em;
       color: var(--espresso);
       text-decoration: none;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.7rem;
+    }
+
+    .nav-loc {
+      font-family: 'Karla', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--saviruusu);
     }
 
     .nav-cta {
-      background: var(--vadelma);
+      background: var(--ruusupinkki);
       color: #fff;
       padding: 0.6rem 1.4rem;
       border-radius: 100px;
@@ -63,7 +75,7 @@
       letter-spacing: 0.01em;
       transition: background 0.2s, transform 0.2s;
     }
-    .nav-cta:hover { background: var(--espresso); transform: translateY(-1px); }
+    .nav-cta:hover { background: var(--vadelma); transform: translateY(-1px); }
 
     /* ── HERO ────────────────────────────────── */
     .hero {
@@ -94,7 +106,7 @@
     }
     .shape-1 {
       width: 180px; height: 180px;
-      background: var(--vadelma);
+      background: var(--ruusupinkki);
       opacity: 0.85;
       bottom: 15%; right: -40px;
       animation: float 6s ease-in-out infinite;
@@ -132,7 +144,7 @@
       font-weight: 500;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--vadelma);
+      color: var(--ruusupinkki);
       margin-bottom: 1.5rem;
     }
 
@@ -148,7 +160,7 @@
 
     .hero-headline em {
       font-style: italic;
-      color: var(--vadelma);
+      color: var(--ruusupinkki);
     }
 
     .hero-sub {
@@ -168,7 +180,7 @@
     }
 
     .btn-primary {
-      background: var(--vadelma);
+      background: var(--ruusupinkki);
       color: #fff;
       padding: 1rem 2rem;
       border-radius: 100px;
@@ -178,7 +190,7 @@
       transition: background 0.2s, transform 0.2s;
       display: inline-block;
     }
-    .btn-primary:hover { background: var(--espresso); transform: translateY(-2px); }
+    .btn-primary:hover { background: var(--vadelma); transform: translateY(-2px); }
 
     .btn-ghost {
       color: var(--espresso);
@@ -190,7 +202,7 @@
       gap: 0.4rem;
       transition: color 0.2s;
     }
-    .btn-ghost:hover { color: var(--vadelma); }
+    .btn-ghost:hover { color: var(--ruusupinkki); }
     .btn-ghost::after { content: '→'; }
 
     .hero-deco-text {
@@ -209,7 +221,7 @@
 
     /* ── TICKER ──────────────────────────────── */
     .ticker {
-      background: var(--vadelma);
+      background: var(--ruusupinkki);
       color: #fff;
       padding: 0.75rem 0;
       overflow: hidden;
@@ -245,7 +257,7 @@
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--vadelma);
+      color: var(--ruusupinkki);
       margin-bottom: 1.5rem;
     }
 
@@ -266,7 +278,7 @@
 
     .positioning-headline em {
       font-style: italic;
-      color: var(--vadelma);
+      color: var(--ruusupinkki);
     }
 
     .positioning-body p {
@@ -286,7 +298,7 @@
 
     .pill {
       background: var(--persikka);
-      border: 1px solid rgba(232, 0, 90, 0.2);
+      border: 1px solid rgba(255, 32, 96, 0.2);
       color: var(--espresso);
       padding: 0.45rem 1rem;
       border-radius: 100px;
@@ -308,13 +320,18 @@
       top: -80px; right: -80px;
       width: 300px; height: 300px;
       border-radius: 50%;
-      background: var(--vadelma);
+      background: var(--ruusupinkki);
       opacity: 0.12;
     }
 
+    .packages-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      position: relative;
+    }
+
     .packages-header {
-      max-width: 1100px;
-      margin: 0 auto 4rem;
+      margin: 0 0 4rem;
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
@@ -332,130 +349,189 @@
     }
 
     .packages-sub {
-      font-size: 0.9rem;
-      color: rgba(255,245,238,0.45);
-      max-width: 260px;
+      font-size: 0.95rem;
+      color: rgba(255,245,238,0.75);
+      max-width: 280px;
       line-height: 1.6;
     }
 
     .packages-grid {
-      max-width: 1100px;
-      margin: 0 auto;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.5rem;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
     }
 
     .package-card {
       background: rgba(255,245,238,0.06);
-      border: 1px solid rgba(255,245,238,0.1);
-      border-radius: 20px;
-      padding: 2.5rem 2rem;
+      border: 1px solid rgba(255,245,238,0.14);
+      border-radius: 18px;
+      padding: 1.75rem 1.25rem;
       position: relative;
       transition: border-color 0.3s, transform 0.3s;
+      display: flex;
+      flex-direction: column;
     }
     .package-card:hover {
-      border-color: var(--vadelma);
+      border-color: var(--ruusupinkki);
       transform: translateY(-4px);
     }
 
     .package-card.featured {
-      background: var(--vadelma);
-      border-color: var(--vadelma);
+      background: var(--ruusupinkki);
+      border-color: var(--ruusupinkki);
     }
 
     .package-tag {
-      font-size: 0.7rem;
+      font-size: 0.65rem;
       font-weight: 600;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: rgba(255,245,238,0.5);
-      margin-bottom: 1.5rem;
+      color: rgba(255,245,238,0.7);
+      margin-bottom: 1.25rem;
     }
-    .package-card.featured .package-tag { color: rgba(255,245,238,0.8); }
+    .package-card.featured .package-tag { color: rgba(255,255,255,0.95); }
 
     .package-badge {
       position: absolute;
-      top: 1.5rem; right: 1.5rem;
+      top: 1rem; right: 1rem;
       background: var(--simpukka);
-      color: var(--vadelma);
-      font-size: 0.65rem;
+      color: var(--ruusupinkki);
+      font-size: 0.6rem;
       font-weight: 700;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      padding: 0.25rem 0.65rem;
+      padding: 0.22rem 0.55rem;
       border-radius: 100px;
     }
 
     .package-name {
       font-family: 'Fraunces', serif;
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 600;
       color: var(--simpukka);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.3rem;
       letter-spacing: -0.02em;
+      line-height: 1.1;
     }
+    .package-card.featured .package-name { color: #fff; }
 
     .package-price {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       font-weight: 700;
       color: var(--simpukka);
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.2rem;
       font-family: 'Karla', sans-serif;
     }
+    .package-card.featured .package-price { color: #fff; }
 
     .package-price-note {
-      font-size: 0.8rem;
-      color: rgba(255,245,238,0.45);
-      margin-bottom: 1.5rem;
+      font-size: 0.75rem;
+      color: rgba(255,245,238,0.7);
+      margin-bottom: 1.25rem;
     }
-    .package-card.featured .package-price-note { color: rgba(255,245,238,0.7); }
+    .package-card.featured .package-price-note { color: rgba(255,255,255,0.92); }
 
     .package-divider {
       border: none;
-      border-top: 1px solid rgba(255,245,238,0.1);
-      margin-bottom: 1.5rem;
+      border-top: 1px solid rgba(255,245,238,0.16);
+      margin-bottom: 1.25rem;
     }
-    .package-card.featured .package-divider { border-color: rgba(255,245,238,0.25); }
+    .package-card.featured .package-divider { border-color: rgba(255,255,255,0.4); }
 
     .package-desc {
-      font-size: 0.88rem;
-      color: rgba(255,245,238,0.6);
-      line-height: 1.65;
-      margin-bottom: 1.5rem;
+      font-size: 0.82rem;
+      color: rgba(255,245,238,0.82);
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
     }
-    .package-card.featured .package-desc { color: rgba(255,245,238,0.9); }
+    .package-card.featured .package-desc { color: #fff; }
 
-    .package-includes {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
+    .package-for {
+      font-size: 0.75rem;
+      font-style: italic;
+      color: rgba(255,245,238,0.65);
+      line-height: 1.5;
+      margin-top: auto;
+      padding-top: 0.8rem;
+      border-top: 1px solid rgba(255,245,238,0.1);
+    }
+    .package-card.featured .package-for { color: rgba(255,255,255,0.95); border-top-color: rgba(255,255,255,0.3); }
+
+    /* ── EXTRAS (lisäpalvelut) ──────────────── */
+    .extras {
+      margin-top: 5rem;
     }
 
-    .package-includes li {
-      font-size: 0.83rem;
-      color: rgba(255,245,238,0.55);
+    .extras-header {
       display: flex;
-      align-items: flex-start;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+
+    .extras-title {
+      font-family: 'Fraunces', serif;
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: var(--simpukka);
+      letter-spacing: -0.02em;
+    }
+
+    .extras-lead {
+      font-size: 0.9rem;
+      color: rgba(255,245,238,0.7);
+      line-height: 1.5;
+    }
+
+    .extras-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+
+    .extra-card {
+      background: rgba(255,245,238,0.04);
+      border: 1px solid rgba(255,245,238,0.12);
+      border-radius: 14px;
+      padding: 1.5rem 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .extra-card:hover { border-color: rgba(255, 32, 96, 0.5); }
+
+    .extra-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
       gap: 0.5rem;
-      line-height: 1.4;
+      margin-bottom: 0.5rem;
     }
-    .package-card.featured .package-includes li { color: rgba(255,245,238,0.9); }
-    .package-includes li::before {
-      content: '✓';
+
+    .extra-name {
+      font-family: 'Fraunces', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--simpukka);
+      letter-spacing: -0.01em;
+    }
+
+    .extra-price {
+      font-size: 0.78rem;
+      font-weight: 600;
       color: var(--koralli);
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 0.05rem;
+      white-space: nowrap;
     }
-    .package-card.featured .package-includes li::before { color: #fff; }
+
+    .extra-desc {
+      font-size: 0.82rem;
+      color: rgba(255,245,238,0.75);
+      line-height: 1.5;
+    }
 
     .packages-note {
-      max-width: 1100px;
-      margin: 2rem auto 0;
+      margin: 2.5rem 0 0;
       font-size: 0.8rem;
-      color: rgba(255,245,238,0.3);
+      color: rgba(255,245,238,0.6);
       text-align: center;
     }
 
@@ -480,7 +556,7 @@
 
     .forwhom-title em {
       font-style: italic;
-      color: var(--vadelma);
+      color: var(--ruusupinkki);
     }
 
     .forwhom-cards {
@@ -526,7 +602,7 @@
     }
     .cta-shape-1 {
       width: 400px; height: 400px;
-      background: var(--vadelma);
+      background: var(--ruusupinkki);
       opacity: 0.08;
       top: -100px; left: -100px;
     }
@@ -547,7 +623,7 @@
       position: relative;
     }
 
-    .cta-headline em { font-style: italic; color: var(--vadelma); }
+    .cta-headline em { font-style: italic; color: var(--ruusupinkki); }
 
     .cta-sub {
       font-size: 1rem;
@@ -562,13 +638,13 @@
       font-family: 'Fraunces', serif;
       font-size: 1.1rem;
       font-style: italic;
-      color: var(--vadelma);
+      color: var(--ruusupinkki);
       text-decoration: none;
-      border-bottom: 2px solid var(--vadelma);
+      border-bottom: 2px solid var(--ruusupinkki);
       padding-bottom: 2px;
       transition: color 0.2s;
     }
-    .cta-email:hover { color: var(--espresso); border-color: var(--espresso); }
+    .cta-email:hover { color: var(--vadelma); border-color: var(--vadelma); }
 
     /* ── FOOTER ──────────────────────────────── */
     footer {
@@ -583,11 +659,17 @@
     }
 
     footer a { color: inherit; text-decoration: none; }
-    footer a:hover { color: var(--vadelma); }
+    footer a:hover { color: var(--ruusupinkki); }
 
     /* ── RESPONSIVE ──────────────────────────── */
+    @media (max-width: 1100px) {
+      .packages-grid { grid-template-columns: repeat(3, 1fr); }
+      .extras-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     @media (max-width: 900px) {
       nav { padding: 1rem 1.25rem; }
+      .nav-loc { display: none; }
 
       .hero {
         grid-template-columns: 1fr;
@@ -619,7 +701,8 @@
       .packages-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
       .packages-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
       .packages-grid { grid-template-columns: 1fr; gap: 1rem; }
-      .package-card { padding: 2rem 1.5rem; }
+      .package-card { padding: 1.75rem 1.5rem; }
+      .extras-grid { grid-template-columns: 1fr; }
 
       .forwhom {
         padding: 4rem 1.25rem;
@@ -665,14 +748,17 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#" class="nav-logo">Studio Aina</a>
+    <a href="#" class="nav-logo">
+      Studio Aina
+      <span class="nav-loc">Helsinki</span>
+    </a>
     <a href="#ota-yhteytta" class="nav-cta">Ota yhteyttä</a>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-image-side">
-      <img src="Studio-Aina-Tuulia-Kolehmainen-portrait-photo_MG_6975.avif" alt="Tuulia Kolehmainen, Studio Aina" />
+      <img src="Studio-Aina-Tuulia-Kolehmainen-portrait-photo_MG_6975.avif" alt="Tuulia Kolehmainen, Studio Aina · Helsinki" />
       <div class="shape-circle shape-1"></div>
       <div class="shape-circle shape-2"></div>
       <div class="shape-dot dot-1"></div>
@@ -680,12 +766,12 @@
     </div>
 
     <div class="hero-text-side">
-      <p class="hero-eyebrow">Valokuvaus · Taitto · Brändi</p>
+      <p class="hero-eyebrow">Helsinki · Valokuvaus · Verkkosivut · Brändi</p>
       <h1 class="hero-headline">
         Tarinasi<br/><em>näkyväksi.</em>
       </h1>
       <p class="hero-sub">
-        Valokuva, taitto ja brändiajattelu samasta kädestä. Tehdään jotain, mikä näyttää sinulta – ei kaikilta muilta.
+        Valokuva, verkkosivut ja brändiajattelu samasta kädestä. Tehdään jotain, mikä näyttää sinulta – ei kaikilta muilta.
       </p>
       <div class="hero-actions">
         <a href="#paketit" class="btn-primary">Katso paketit</a>
@@ -702,7 +788,7 @@
       <span class="ticker-dot">✦</span>
       <span class="ticker-item">Visuaalinen ilme</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Taitto</span>
+      <span class="ticker-item">Verkkosivut</span>
       <span class="ticker-dot">✦</span>
       <span class="ticker-item">Brändiajattelu</span>
       <span class="ticker-dot">✦</span>
@@ -712,7 +798,7 @@
       <span class="ticker-dot">✦</span>
       <span class="ticker-item">Visuaalinen ilme</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Taitto</span>
+      <span class="ticker-item">Verkkosivut</span>
       <span class="ticker-dot">✦</span>
       <span class="ticker-item">Brändiajattelu</span>
       <span class="ticker-dot">✦</span>
@@ -735,14 +821,14 @@
           Takana on yksi ihminen, ei kasvoton tiimi. Se näkyy lopputuloksessa: visuaalinen ilme, kuvat ja tekstit puhuvat samaa kieltä – koska niistä on vastannut sama käsipari alusta loppuun.
         </p>
         <p class="fade-up">
-          Jokainen projekti alkaa tarinasta. Etsimme oikean valon, värin ja rytmin, jotta lopputulos tuntuu yhtä aikaa raikkaalta ja ajattomalta – kuvasta typografiaan, ruudulta painoon.
+          Jokainen projekti alkaa tarinasta. Etsitään oikea valo, väri ja rytmi, jotta lopputulos tuntuu yhtä aikaa raikkaalta ja ajattomalta – kuvasta typografiaan, ruudulta painoon.
         </p>
         <div class="positioning-pills fade-up">
           <span class="pill">Yrityskuvaus</span>
           <span class="pill">Visuaalinen ilme</span>
-          <span class="pill">Taitto ja julkaisut</span>
           <span class="pill">Verkkosivut</span>
           <span class="pill">Some-viestintä</span>
+          <span class="pill">SEO ja löydettävyys</span>
           <span class="pill">Brändikehitys</span>
         </div>
       </div>
@@ -751,67 +837,141 @@
 
   <!-- PACKAGES -->
   <section class="packages" id="paketit">
-    <div class="packages-header">
-      <h2 class="packages-title fade-up">Selkeät<br/>paketit.</h2>
-      <p class="packages-sub fade-up">Kiinteä hinta, selkeä sisältö. Ei tuntilaskutuksen arvailua.</p>
+    <div class="packages-inner">
+
+      <div class="packages-header">
+        <h2 class="packages-title fade-up">Selkeät<br/>paketit.</h2>
+        <p class="packages-sub fade-up">Kiinteä hinta, selkeä sisältö. Diagnoosi ei jää lapulle – työ tehdään loppuun asti.</p>
+      </div>
+
+      <div class="packages-grid">
+
+        <div class="package-card fade-up">
+          <p class="package-tag">01 Lähikuva</p>
+          <h3 class="package-name">Lähikuva</h3>
+          <p class="package-price">149 €</p>
+          <p class="package-price-note">pikadiagnoosi</p>
+          <hr class="package-divider" />
+          <p class="package-desc">
+            Käyn läpi sivuston, somen ja löydettävyyden. Pikavoitot saman tien, lopusta tärkeysjärjestetty lista.
+          </p>
+          <p class="package-for">Kun tietää että jokin mättää, muttei tiedä mistä aloittaa.</p>
+        </div>
+
+        <div class="package-card fade-up">
+          <p class="package-tag">02 Puolikuva</p>
+          <h3 class="package-name">Puolikuva</h3>
+          <p class="package-price">490 €</p>
+          <p class="package-price-note">yksi asia kuntoon</p>
+          <hr class="package-divider" />
+          <p class="package-desc">
+            Yksi selkeä kipupiste pois alta: ilme, yksittäinen sivu, saavutettavuus tai löydettävyys.
+          </p>
+          <p class="package-for">Kun on jo jotain, mutta yksi asia vie yöunet.</p>
+        </div>
+
+        <div class="package-card fade-up">
+          <p class="package-tag">03 Kokokuva</p>
+          <h3 class="package-name">Kokokuva</h3>
+          <p class="package-price">1 490 €</p>
+          <p class="package-price-note">visuaalinen ilme</p>
+          <hr class="package-divider" />
+          <p class="package-desc">
+            Logo, värit, typografia ja käyttöohje. Selkeä pohja kaikelle näkyvälle, käyttövalmiina.
+          </p>
+          <p class="package-for">Kun ilme tehdään kerran kunnolla – ei joka kerta uudestaan.</p>
+        </div>
+
+        <div class="package-card featured fade-up">
+          <span class="package-badge">Suosituin</span>
+          <p class="package-tag">04 Yleiskuva</p>
+          <h3 class="package-name">Yleiskuva</h3>
+          <p class="package-price">2 900 €</p>
+          <p class="package-price-note">ilme + sivusto</p>
+          <hr class="package-divider" />
+          <p class="package-desc">
+            Visuaalinen ilme ja sivusto samasta kädestä. Näytät hyvältä heti – kuvasta typografiaan asti.
+          </p>
+          <p class="package-for">Kun haluaa näyttää siltä, että tietää mitä tekee – ja löytyä.</p>
+        </div>
+
+        <div class="package-card fade-up">
+          <p class="package-tag">05 Panoraama</p>
+          <h3 class="package-name">Panoraama</h3>
+          <p class="package-price">alk. 4 900 €</p>
+          <p class="package-price-note">koko paketti</p>
+          <hr class="package-divider" />
+          <p class="package-desc">
+            Suunnittelu, kuvaukset, sivusto ja löydettävyys. Verkkokauppa liitettävissä mukaan.
+          </p>
+          <p class="package-for">Kun haluaa antaa koko homman yksiin käsiin.</p>
+        </div>
+
+      </div>
+
+      <!-- EXTRAS -->
+      <div class="extras">
+        <div class="extras-header">
+          <h3 class="extras-title fade-up">Lisäpalvelut</h3>
+          <p class="extras-lead fade-up">Räätälöitäviä juttuja paketteihin tai erikseen.</p>
+        </div>
+
+        <div class="extras-grid">
+
+          <div class="extra-card fade-up">
+            <div class="extra-head">
+              <span class="extra-name">Pikaländäri</span>
+              <span class="extra-price">290 €</span>
+            </div>
+            <p class="extra-desc">Yhden tavoitteen laskeutumissivu valmiille alustalle, päivissä julki.</p>
+          </div>
+
+          <div class="extra-card fade-up">
+            <div class="extra-head">
+              <span class="extra-name">Kuvaus</span>
+              <span class="extra-price">tarjouksesta</span>
+            </div>
+            <p class="extra-desc">Brändi-, tuote- tai miljöökuvaus. Käyttöoikeudet hinnoitellaan tarpeen mukaan.</p>
+          </div>
+
+          <div class="extra-card fade-up">
+            <div class="extra-head">
+              <span class="extra-name">Verkkokauppa</span>
+              <span class="extra-price">tarjouksesta</span>
+            </div>
+            <p class="extra-desc">Shopify, WooCommerce tai muu sopiva alusta. Osana Panoraamaa tai erikseen.</p>
+          </div>
+
+          <div class="extra-card fade-up">
+            <div class="extra-head">
+              <span class="extra-name">Meta &amp; Google -mainonta</span>
+              <span class="extra-price">kk-veloitus</span>
+            </div>
+            <p class="extra-desc">Kampanjat, kohdennukset, seuranta ja optimointi. Mainosbudjetti erikseen.</p>
+          </div>
+
+          <div class="extra-card fade-up">
+            <div class="extra-head">
+              <span class="extra-name">Silmäpari</span>
+              <span class="extra-price">alk. 50 €/kk</span>
+            </div>
+            <p class="extra-desc">Jatkuva ylläpito kevyestä WP-huollosta täyteen kuukausipakettiin.</p>
+          </div>
+
+          <div class="extra-card fade-up">
+            <div class="extra-head">
+              <span class="extra-name">Tuntityö</span>
+              <span class="extra-price">79 €/h</span>
+            </div>
+            <p class="extra-desc">Kun homma ei istu valmiiseen pakettiin. Täsmätarpeisiin ja vakkareille.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <p class="packages-note fade-up">Kaikki hinnat alv 0 %. Paketit räätälöidään tarpeen mukaan.</p>
+
     </div>
-    <div class="packages-grid">
-
-      <div class="package-card fade-up">
-        <p class="package-tag">Paketti 01</p>
-        <h3 class="package-name">Kokokuva</h3>
-        <p class="package-price">490 €</p>
-        <p class="package-price-note">kertaluonteinen</p>
-        <hr class="package-divider" />
-        <p class="package-desc">
-          Visuaalinen ilme alusta loppuun: värit, fontit, logo ja käyttöohje. Selkeä pohja kaikelle näkyvälle.
-        </p>
-        <ul class="package-includes">
-          <li>Logo ja wordmark</li>
-          <li>Väripaletti ja typografia</li>
-          <li>Lyhyt brändiohjeisto</li>
-          <li>Toimitusmuodot käyttövalmiina</li>
-        </ul>
-      </div>
-
-      <div class="package-card featured fade-up">
-        <span class="package-badge">Suosituin</span>
-        <p class="package-tag">Paketti 02</p>
-        <h3 class="package-name">Yleiskuva</h3>
-        <p class="package-price">2 900 €</p>
-        <p class="package-price-note">sis. visuaalinen ilme</p>
-        <hr class="package-divider" />
-        <p class="package-desc">
-          Ilme ja sivusto samasta kädestä. Näytät hyvältä heti – eikä visuaalinen ilme riitele verkkosivujen kanssa.
-        </p>
-        <ul class="package-includes">
-          <li>Kaikki Kokokuvasta</li>
-          <li>Valokuvaus (puolipäivä)</li>
-          <li>Verkkosivut (ländäri tai esittelysivu)</li>
-          <li>Some-pohjat käyttövalmiina</li>
-          <li>Tekstit yhteistyössä</li>
-        </ul>
-      </div>
-
-      <div class="package-card fade-up">
-        <p class="package-tag">Paketti 03</p>
-        <h3 class="package-name">Silmäpari</h3>
-        <p class="package-price">alk. 50 €<span style="font-size:0.9rem;font-weight:400">/kk</span></p>
-        <p class="package-price-note">jatkuva tuki</p>
-        <hr class="package-divider" />
-        <p class="package-desc">
-          Pysyn kuvioissa. Päivitykset, sisältö, varmuuskopiot ja nopeat korjaukset – niin että sinä voit keskittyä muuhun.
-        </p>
-        <ul class="package-includes">
-          <li>Sivuston ylläpito ja päivitykset</li>
-          <li>Kuukausittainen sisältöohjaus</li>
-          <li>Nopea reagointi viesteihin</li>
-          <li>Brändin jatkokehitys tarpeen mukaan</li>
-        </ul>
-      </div>
-
-    </div>
-    <p class="packages-note fade-up">Kaikki hinnat alv 0 %. Räätälöidyistä ratkaisuista voidaan aina neuvotella.</p>
   </section>
 
   <!-- FOR WHOM -->
@@ -862,7 +1022,7 @@
   <!-- FOOTER -->
   <footer>
     <span>© 2026 Studio Aina · Tuulia Kolehmainen</span>
-    <span>Valokuvaus · Taitto · Brändi · Helsinki</span>
+    <span>Valokuvaus · Visuaalinen ilme · Verkkosivut · Brändi</span>
     <a href="mailto:tuulia@studioaina.fi">tuulia@studioaina.fi</a>
   </footer>
 
