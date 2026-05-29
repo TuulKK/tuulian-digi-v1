@@ -3,30 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tuulian Digi – Hyvä brändi ei huuda. Se kutsuu sisään.</title>
-  <meta name="description" content="Tuulia Kolehmainen auttaa pk-yrityksiä löytämään visuaaliset kehityskohteensa – ja viemään muutokset käytäntöön. Visuaalinen viestintä, digimarkkinointi ja brändi.">
+  <title>Studio Aina – Tarinasi näkyväksi.</title>
+  <meta name="description" content="Studio Aina on helsinkiläinen yhden tekijän studio. Valokuva, taitto ja brändiajattelu samasta kädestä – selkeästi, ajallaan, sinun näköisesti.">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300;1,9..144,900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,400;1,9..144,900&family=Karla:wght@300;400;500;700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --pink: #FF2060;
-      --coral: #FF6B5B;
-      --hot: #E8005A;
-      --cream: #FFF5EE;
-      --warm: #FFE8DC;
-      --dark: #1A0808;
-      --mid: #7A4040;
-      --lavender: #D4B8E0;
+      --vadelma:    #E8005A;
+      --ruusupinkki:#FF2060;
+      --koralli:    #FF6B5B;
+      --laventeli:  #D4B8E0;
+      --persikka:   #FFE8DC;
+      --simpukka:   #FFF5EE;
+      --kivi:       #595959;
+      --saviruusu:  #7A4040;
+      --espresso:   #1A0808;
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--cream);
-      color: var(--dark);
+      font-family: 'Karla', sans-serif;
+      background: var(--simpukka);
+      color: var(--espresso);
       overflow-x: hidden;
     }
 
@@ -45,14 +46,14 @@
     .nav-logo {
       font-family: 'Fraunces', serif;
       font-size: 1.25rem;
-      font-weight: 700;
+      font-weight: 600;
       letter-spacing: -0.02em;
-      color: var(--dark);
+      color: var(--espresso);
       text-decoration: none;
     }
 
     .nav-cta {
-      background: var(--pink);
+      background: var(--vadelma);
       color: #fff;
       padding: 0.6rem 1.4rem;
       border-radius: 100px;
@@ -62,7 +63,7 @@
       letter-spacing: 0.01em;
       transition: background 0.2s, transform 0.2s;
     }
-    .nav-cta:hover { background: var(--hot); transform: translateY(-1px); }
+    .nav-cta:hover { background: var(--espresso); transform: translateY(-1px); }
 
     /* ── HERO ────────────────────────────────── */
     .hero {
@@ -75,7 +76,7 @@
 
     .hero-image-side {
       position: relative;
-      background: var(--warm);
+      background: var(--persikka);
     }
 
     .hero-image-side img {
@@ -86,7 +87,6 @@
       display: block;
     }
 
-    /* decorative collage shapes */
     .shape-circle {
       position: absolute;
       border-radius: 50%;
@@ -94,29 +94,29 @@
     }
     .shape-1 {
       width: 180px; height: 180px;
-      background: var(--pink);
+      background: var(--vadelma);
       opacity: 0.85;
       bottom: 15%; right: -40px;
       animation: float 6s ease-in-out infinite;
     }
     .shape-2 {
       width: 80px; height: 80px;
-      border: 3px solid var(--coral);
+      border: 3px solid var(--koralli);
       top: 20%; right: 30px;
       animation: float 8s ease-in-out infinite reverse;
     }
     .shape-dot {
       position: absolute;
       width: 12px; height: 12px;
-      background: var(--hot);
+      background: var(--vadelma);
       border-radius: 50%;
     }
     .dot-1 { bottom: 30%; right: 60px; }
-    .dot-2 { top: 35%; left: 20px; background: var(--lavender); width: 20px; height: 20px; }
+    .dot-2 { top: 35%; left: 20px; background: var(--laventeli); width: 20px; height: 20px; }
 
     @keyframes float {
       0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-12px); }
+      50%       { transform: translateY(-12px); }
     }
 
     .hero-text-side {
@@ -130,9 +130,9 @@
     .hero-eyebrow {
       font-size: 0.8rem;
       font-weight: 500;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--pink);
+      color: var(--vadelma);
       margin-bottom: 1.5rem;
     }
 
@@ -142,19 +142,19 @@
       font-weight: 900;
       line-height: 1.0;
       letter-spacing: -0.03em;
-      color: var(--dark);
+      color: var(--espresso);
       margin-bottom: 1.5rem;
     }
 
     .hero-headline em {
       font-style: italic;
-      color: var(--pink);
+      color: var(--vadelma);
     }
 
     .hero-sub {
       font-size: 1.1rem;
       line-height: 1.65;
-      color: var(--mid);
+      color: var(--kivi);
       font-weight: 300;
       max-width: 380px;
       margin-bottom: 2.5rem;
@@ -168,7 +168,7 @@
     }
 
     .btn-primary {
-      background: var(--pink);
+      background: var(--vadelma);
       color: #fff;
       padding: 1rem 2rem;
       border-radius: 100px;
@@ -178,10 +178,10 @@
       transition: background 0.2s, transform 0.2s;
       display: inline-block;
     }
-    .btn-primary:hover { background: var(--hot); transform: translateY(-2px); }
+    .btn-primary:hover { background: var(--espresso); transform: translateY(-2px); }
 
     .btn-ghost {
-      color: var(--dark);
+      color: var(--espresso);
       font-size: 0.9rem;
       font-weight: 400;
       text-decoration: none;
@@ -190,10 +190,9 @@
       gap: 0.4rem;
       transition: color 0.2s;
     }
-    .btn-ghost:hover { color: var(--pink); }
+    .btn-ghost:hover { color: var(--vadelma); }
     .btn-ghost::after { content: '→'; }
 
-    /* decorative text element */
     .hero-deco-text {
       position: absolute;
       bottom: 2rem;
@@ -202,7 +201,7 @@
       font-size: 7rem;
       font-weight: 900;
       font-style: italic;
-      color: var(--warm);
+      color: var(--persikka);
       line-height: 1;
       pointer-events: none;
       user-select: none;
@@ -210,7 +209,7 @@
 
     /* ── TICKER ──────────────────────────────── */
     .ticker {
-      background: var(--pink);
+      background: var(--vadelma);
       color: #fff;
       padding: 0.75rem 0;
       overflow: hidden;
@@ -219,20 +218,18 @@
     .ticker-inner {
       display: inline-flex;
       gap: 3rem;
-      animation: ticker 18s linear infinite;
+      animation: ticker 20s linear infinite;
     }
     .ticker-item {
       font-family: 'Fraunces', serif;
       font-size: 1rem;
       font-style: italic;
-      font-weight: 300;
+      font-weight: 400;
       letter-spacing: 0.01em;
     }
-    .ticker-dot {
-      color: rgba(255,255,255,0.5);
-    }
+    .ticker-dot { color: rgba(255,255,255,0.5); }
     @keyframes ticker {
-      0% { transform: translateX(0); }
+      0%   { transform: translateX(0); }
       100% { transform: translateX(-50%); }
     }
 
@@ -248,7 +245,7 @@
       font-weight: 600;
       letter-spacing: 0.14em;
       text-transform: uppercase;
-      color: var(--pink);
+      color: var(--vadelma);
       margin-bottom: 1.5rem;
     }
 
@@ -262,21 +259,21 @@
     .positioning-headline {
       font-family: 'Fraunces', serif;
       font-size: clamp(2rem, 3.5vw, 3.2rem);
-      font-weight: 700;
+      font-weight: 600;
       line-height: 1.15;
       letter-spacing: -0.02em;
     }
 
     .positioning-headline em {
       font-style: italic;
-      color: var(--pink);
+      color: var(--vadelma);
     }
 
     .positioning-body p {
       font-size: 1.05rem;
       line-height: 1.75;
-      color: var(--mid);
-      font-weight: 300;
+      color: var(--kivi);
+      font-weight: 400;
       margin-bottom: 1.2rem;
     }
 
@@ -288,9 +285,9 @@
     }
 
     .pill {
-      background: var(--warm);
-      border: 1px solid rgba(255, 32, 96, 0.2);
-      color: var(--dark);
+      background: var(--persikka);
+      border: 1px solid rgba(232, 0, 90, 0.2);
+      color: var(--espresso);
       padding: 0.45rem 1rem;
       border-radius: 100px;
       font-size: 0.82rem;
@@ -299,7 +296,7 @@
 
     /* ── PACKAGES ───────────────────────────── */
     .packages {
-      background: var(--dark);
+      background: var(--espresso);
       padding: 7rem 2.5rem;
       position: relative;
       overflow: hidden;
@@ -311,7 +308,7 @@
       top: -80px; right: -80px;
       width: 300px; height: 300px;
       border-radius: 50%;
-      background: var(--pink);
+      background: var(--vadelma);
       opacity: 0.12;
     }
 
@@ -329,14 +326,14 @@
       font-family: 'Fraunces', serif;
       font-size: clamp(2rem, 3.5vw, 3rem);
       font-weight: 900;
-      color: #fff;
+      color: var(--simpukka);
       line-height: 1.1;
       letter-spacing: -0.03em;
     }
 
     .packages-sub {
       font-size: 0.9rem;
-      color: rgba(255,255,255,0.45);
+      color: rgba(255,245,238,0.45);
       max-width: 260px;
       line-height: 1.6;
     }
@@ -350,21 +347,21 @@
     }
 
     .package-card {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(255,255,255,0.1);
+      background: rgba(255,245,238,0.06);
+      border: 1px solid rgba(255,245,238,0.1);
       border-radius: 20px;
       padding: 2.5rem 2rem;
       position: relative;
       transition: border-color 0.3s, transform 0.3s;
     }
     .package-card:hover {
-      border-color: var(--pink);
+      border-color: var(--vadelma);
       transform: translateY(-4px);
     }
 
     .package-card.featured {
-      background: var(--pink);
-      border-color: var(--pink);
+      background: var(--vadelma);
+      border-color: var(--vadelma);
     }
 
     .package-tag {
@@ -372,18 +369,16 @@
       font-weight: 600;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: rgba(255,255,255,0.5);
+      color: rgba(255,245,238,0.5);
       margin-bottom: 1.5rem;
     }
-    .package-card.featured .package-tag {
-      color: rgba(255,255,255,0.8);
-    }
+    .package-card.featured .package-tag { color: rgba(255,245,238,0.8); }
 
     .package-badge {
       position: absolute;
       top: 1.5rem; right: 1.5rem;
-      background: #fff;
-      color: var(--pink);
+      background: var(--simpukka);
+      color: var(--vadelma);
       font-size: 0.65rem;
       font-weight: 700;
       letter-spacing: 0.08em;
@@ -395,8 +390,8 @@
     .package-name {
       font-family: 'Fraunces', serif;
       font-size: 2rem;
-      font-weight: 700;
-      color: #fff;
+      font-weight: 600;
+      color: var(--simpukka);
       margin-bottom: 0.4rem;
       letter-spacing: -0.02em;
     }
@@ -404,32 +399,32 @@
     .package-price {
       font-size: 1.5rem;
       font-weight: 700;
-      color: #fff;
+      color: var(--simpukka);
       margin-bottom: 0.3rem;
-      font-family: 'DM Sans', sans-serif;
+      font-family: 'Karla', sans-serif;
     }
 
     .package-price-note {
       font-size: 0.8rem;
-      color: rgba(255,255,255,0.45);
+      color: rgba(255,245,238,0.45);
       margin-bottom: 1.5rem;
     }
-    .package-card.featured .package-price-note { color: rgba(255,255,255,0.7); }
+    .package-card.featured .package-price-note { color: rgba(255,245,238,0.7); }
 
     .package-divider {
       border: none;
-      border-top: 1px solid rgba(255,255,255,0.1);
+      border-top: 1px solid rgba(255,245,238,0.1);
       margin-bottom: 1.5rem;
     }
-    .package-card.featured .package-divider { border-color: rgba(255,255,255,0.25); }
+    .package-card.featured .package-divider { border-color: rgba(255,245,238,0.25); }
 
     .package-desc {
       font-size: 0.88rem;
-      color: rgba(255,255,255,0.6);
+      color: rgba(255,245,238,0.6);
       line-height: 1.65;
       margin-bottom: 1.5rem;
     }
-    .package-card.featured .package-desc { color: rgba(255,255,255,0.85); }
+    .package-card.featured .package-desc { color: rgba(255,245,238,0.9); }
 
     .package-includes {
       list-style: none;
@@ -440,16 +435,16 @@
 
     .package-includes li {
       font-size: 0.83rem;
-      color: rgba(255,255,255,0.55);
+      color: rgba(255,245,238,0.55);
       display: flex;
       align-items: flex-start;
       gap: 0.5rem;
       line-height: 1.4;
     }
-    .package-card.featured .package-includes li { color: rgba(255,255,255,0.9); }
+    .package-card.featured .package-includes li { color: rgba(255,245,238,0.9); }
     .package-includes li::before {
       content: '✓';
-      color: var(--coral);
+      color: var(--koralli);
       font-weight: 700;
       flex-shrink: 0;
       margin-top: 0.05rem;
@@ -460,7 +455,7 @@
       max-width: 1100px;
       margin: 2rem auto 0;
       font-size: 0.8rem;
-      color: rgba(255,255,255,0.3);
+      color: rgba(255,245,238,0.3);
       text-align: center;
     }
 
@@ -485,7 +480,7 @@
 
     .forwhom-title em {
       font-style: italic;
-      color: var(--pink);
+      color: var(--vadelma);
     }
 
     .forwhom-cards {
@@ -495,32 +490,29 @@
     }
 
     .forwhom-card {
-      background: var(--warm);
+      background: var(--persikka);
       border-radius: 16px;
       padding: 1.5rem;
     }
 
-    .forwhom-emoji {
-      font-size: 1.8rem;
-      margin-bottom: 0.75rem;
-    }
+    .forwhom-emoji { font-size: 1.8rem; margin-bottom: 0.75rem; }
 
     .forwhom-card-title {
       font-family: 'Fraunces', serif;
       font-size: 1rem;
-      font-weight: 700;
+      font-weight: 600;
       margin-bottom: 0.4rem;
     }
 
     .forwhom-card-text {
       font-size: 0.83rem;
-      color: var(--mid);
+      color: var(--saviruusu);
       line-height: 1.55;
     }
 
     /* ── CTA ─────────────────────────────────── */
     .cta-section {
-      background: var(--warm);
+      background: var(--persikka);
       padding: 7rem 2.5rem;
       text-align: center;
       position: relative;
@@ -534,13 +526,13 @@
     }
     .cta-shape-1 {
       width: 400px; height: 400px;
-      background: var(--pink);
+      background: var(--vadelma);
       opacity: 0.08;
       top: -100px; left: -100px;
     }
     .cta-shape-2 {
       width: 250px; height: 250px;
-      background: var(--coral);
+      background: var(--koralli);
       opacity: 0.08;
       bottom: -60px; right: -60px;
     }
@@ -555,11 +547,11 @@
       position: relative;
     }
 
-    .cta-headline em { font-style: italic; color: var(--pink); }
+    .cta-headline em { font-style: italic; color: var(--vadelma); }
 
     .cta-sub {
       font-size: 1rem;
-      color: var(--mid);
+      color: var(--kivi);
       line-height: 1.65;
       max-width: 480px;
       margin: 0 auto 2.5rem;
@@ -570,13 +562,13 @@
       font-family: 'Fraunces', serif;
       font-size: 1.1rem;
       font-style: italic;
-      color: var(--pink);
+      color: var(--vadelma);
       text-decoration: none;
-      border-bottom: 2px solid var(--pink);
+      border-bottom: 2px solid var(--vadelma);
       padding-bottom: 2px;
       transition: color 0.2s;
     }
-    .cta-email:hover { color: var(--hot); border-color: var(--hot); }
+    .cta-email:hover { color: var(--espresso); border-color: var(--espresso); }
 
     /* ── FOOTER ──────────────────────────────── */
     footer {
@@ -591,14 +583,12 @@
     }
 
     footer a { color: inherit; text-decoration: none; }
-    footer a:hover { color: var(--pink); }
+    footer a:hover { color: var(--vadelma); }
 
-    /* ── RESPONSIVE ─────────────────────────── */
+    /* ── RESPONSIVE ──────────────────────────── */
     @media (max-width: 900px) {
-      /* Nav */
       nav { padding: 1rem 1.25rem; }
 
-      /* Hero: kuva ensin, teksti alle */
       .hero {
         grid-template-columns: 1fr;
         min-height: auto;
@@ -611,9 +601,7 @@
       .hero-image-side img { object-position: center 15%; }
       .shape-1 { width: 100px; height: 100px; right: -20px; }
       .shape-2 { display: none; }
-      .hero-text-side {
-        padding: 2.5rem 1.25rem 3.5rem;
-      }
+      .hero-text-side { padding: 2.5rem 1.25rem 3.5rem; }
       .hero-eyebrow { font-size: 0.72rem; margin-bottom: 1rem; }
       .hero-headline { font-size: clamp(2.2rem, 8vw, 3rem); margin-bottom: 1rem; }
       .hero-sub { font-size: 0.95rem; max-width: 100%; margin-bottom: 2rem; }
@@ -621,22 +609,18 @@
       .btn-primary { width: 100%; text-align: center; padding: 1rem 1.5rem; }
       .hero-deco-text { display: none; }
 
-      /* Ticker */
       .ticker-item { font-size: 0.88rem; }
 
-      /* Positioning */
       .positioning { padding: 4rem 1.25rem; }
       .positioning-grid { grid-template-columns: 1fr; gap: 1.5rem; }
       .positioning-headline { font-size: clamp(1.8rem, 7vw, 2.4rem); }
 
-      /* Packages */
       .packages { padding: 4rem 1.25rem; }
       .packages-header { flex-direction: column; align-items: flex-start; gap: 1rem; }
       .packages-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
       .packages-grid { grid-template-columns: 1fr; gap: 1rem; }
       .package-card { padding: 2rem 1.5rem; }
 
-      /* For whom */
       .forwhom {
         padding: 4rem 1.25rem;
         grid-template-columns: 1fr;
@@ -647,22 +631,15 @@
       .forwhom-cards { grid-template-columns: 1fr; gap: 0.75rem; }
       .forwhom-title { font-size: clamp(1.8rem, 7vw, 2.4rem); }
 
-      /* CTA */
       .cta-section { padding: 4rem 1.25rem; }
       .cta-headline { font-size: clamp(2rem, 8vw, 3rem); }
-      .hero-actions { flex-direction: column; }
-      .btn-primary, .btn-ghost { font-size: 0.88rem; }
 
-      /* Footer */
       footer {
         flex-direction: column;
         text-align: center;
         padding: 1.5rem 1.25rem;
         gap: 0.5rem;
       }
-
-      /* Section label */
-      .section-label { font-size: 0.7rem; }
     }
 
     @media (max-width: 480px) {
@@ -688,14 +665,14 @@
 
   <!-- NAV -->
   <nav>
-    <a href="#" class="nav-logo">Tuulian Digi</a>
+    <a href="#" class="nav-logo">Studio Aina</a>
     <a href="#ota-yhteytta" class="nav-cta">Ota yhteyttä</a>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-image-side">
-      <img src="portrait-v1.jpg" alt="Tuulia Kolehmainen, visuaalinen suunnittelija" />
+      <img src="portrait.avif" alt="Tuulia Kolehmainen, Studio Aina" />
       <div class="shape-circle shape-1"></div>
       <div class="shape-circle shape-2"></div>
       <div class="shape-dot dot-1"></div>
@@ -703,43 +680,43 @@
     </div>
 
     <div class="hero-text-side">
-      <p class="hero-eyebrow">Visuaalinen viestintä · Digi · Brändi</p>
+      <p class="hero-eyebrow">Valokuvaus · Taitto · Brändi</p>
       <h1 class="hero-headline">
-        Hyvä brändi<br/>ei huuda.<br/><em>Se kutsuu<br/>sisään.</em>
+        Tarinasi<br/><em>näkyväksi.</em>
       </h1>
       <p class="hero-sub">
-        Autan pk-yrityksiä löytämään visuaaliset kehityskohteensa – ja viemään muutokset käytäntöön. Ei pelkkiä raportteja.
+        Valokuva, taitto ja brändiajattelu samasta kädestä. Tehdään jotain, mikä näyttää sinulta – ei kaikilta muilta.
       </p>
       <div class="hero-actions">
         <a href="#paketit" class="btn-primary">Katso paketit</a>
         <a href="#ota-yhteytta" class="btn-ghost">Jutellaan ensin</a>
       </div>
-      <div class="hero-deco-text">T</div>
+      <div class="hero-deco-text">A</div>
     </div>
   </section>
 
   <!-- TICKER -->
   <div class="ticker" aria-hidden="true">
     <div class="ticker-inner">
-      <span class="ticker-item">Visuaalinen viestintä</span>
+      <span class="ticker-item">Valokuvaus</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Digimarkkinointi</span>
+      <span class="ticker-item">Visuaalinen ilme</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Brändikehitys</span>
+      <span class="ticker-item">Taitto</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">AI-työkalut</span>
+      <span class="ticker-item">Brändiajattelu</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Vastuullisuusviestintä</span>
+      <span class="ticker-item">Selkeä jälki</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Visuaalinen viestintä</span>
+      <span class="ticker-item">Valokuvaus</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Digimarkkinointi</span>
+      <span class="ticker-item">Visuaalinen ilme</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Brändikehitys</span>
+      <span class="ticker-item">Taitto</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">AI-työkalut</span>
+      <span class="ticker-item">Brändiajattelu</span>
       <span class="ticker-dot">✦</span>
-      <span class="ticker-item">Vastuullisuusviestintä</span>
+      <span class="ticker-item">Selkeä jälki</span>
       <span class="ticker-dot">✦</span>
     </div>
   </div>
@@ -750,23 +727,23 @@
     <div class="positioning-grid">
       <div>
         <h2 class="positioning-headline fade-up">
-          Työ ei jää<br/><em>raportiksi.</em>
+          Kaikki<br/>samasta<br/><em>kädestä.</em>
         </h2>
       </div>
       <div class="positioning-body">
         <p class="fade-up">
-          Pk-yritys harvoin tarvitsee lisää PowerPointeja. Se tarvitsee jonkun, joka näkee mikä ei toimi – ja tekee sille jotain.
+          Takana on yksi ihminen, ei kasvoton tiimi. Se näkyy lopputuloksessa: visuaalinen ilme, kuvat ja tekstit puhuvat samaa kieltä – koska niistä on vastannut sama käsipari alusta loppuun.
         </p>
         <p class="fade-up">
-          Käyn läpi visuaalisen viestinnän, verkkosivut, somen, brändin ja digimarkkinoinnin. Tunnistan kehityskohdat ja toteutetaan muutokset yhdessä – tai minä toteutan ne.
+          Jokainen projekti alkaa tarinasta. Etsimme oikean valon, värin ja rytmin, jotta lopputulos tuntuu yhtä aikaa raikkaalta ja ajattomalta – kuvasta typografiaan, ruudulta painoon.
         </p>
         <div class="positioning-pills fade-up">
-          <span class="pill">Verkkosivut</span>
+          <span class="pill">Yrityskuvaus</span>
           <span class="pill">Visuaalinen ilme</span>
+          <span class="pill">Taitto ja julkaisut</span>
+          <span class="pill">Verkkosivut</span>
           <span class="pill">Some-viestintä</span>
-          <span class="pill">AI-käyttöönotto</span>
-          <span class="pill">Vastuullisuus</span>
-          <span class="pill">Digimarkkinointi</span>
+          <span class="pill">Brändikehitys</span>
         </div>
       </div>
     </div>
@@ -776,61 +753,60 @@
   <section class="packages" id="paketit">
     <div class="packages-header">
       <h2 class="packages-title fade-up">Selkeät<br/>paketit.</h2>
-      <p class="packages-sub fade-up">Hinnat ovat kiinteät – ei yllätyksiä, ei tuntilaskutuksen arvailua.</p>
+      <p class="packages-sub fade-up">Kiinteä hinta, selkeä sisältö. Ei tuntilaskutuksen arvailua.</p>
     </div>
     <div class="packages-grid">
 
       <div class="package-card fade-up">
         <p class="package-tag">Paketti 01</p>
-        <h3 class="package-name">Katsaus</h3>
-        <p class="package-price">790 €</p>
+        <h3 class="package-name">Kokokuva</h3>
+        <p class="package-price">490 €</p>
         <p class="package-price-note">kertaluonteinen</p>
         <hr class="package-divider" />
         <p class="package-desc">
-          Nopea mutta perinpohjainen kartoitus. Näet missä olet, mitä kannattaa muuttaa – ja missä järjestyksessä.
+          Visuaalinen ilme alusta loppuun: värit, fontit, logo ja käyttöohje. Selkeä pohja kaikelle näkyvälle.
         </p>
         <ul class="package-includes">
-          <li>Visuaalinen auditointi (netti, some, brändi)</li>
-          <li>90 min workshop</li>
-          <li>Kirjallinen löydösraportti</li>
-          <li>3 priorisoitua toimenpide-ehdotusta</li>
+          <li>Logo ja wordmark</li>
+          <li>Väripaletti ja typografia</li>
+          <li>Lyhyt brändiohjeisto</li>
+          <li>Toimitusmuodot käyttövalmiina</li>
         </ul>
       </div>
 
       <div class="package-card featured fade-up">
         <span class="package-badge">Suosituin</span>
         <p class="package-tag">Paketti 02</p>
-        <h3 class="package-name">Siirto</h3>
-        <p class="package-price">2 400 €</p>
-        <p class="package-price-note">sis. Katsaus-auditointi</p>
+        <h3 class="package-name">Yleiskuva</h3>
+        <p class="package-price">2 900 €</p>
+        <p class="package-price-note">sis. visuaalinen ilme</p>
         <hr class="package-divider" />
         <p class="package-desc">
-          Kartoituksesta käytäntöön. Toteutetaan keskeisimmät muutokset – ei vain suunnitella niitä.
+          Ilme ja sivusto samasta kädestä. Näytät hyvältä heti – eikä visuaalinen ilme riitele verkkosivujen kanssa.
         </p>
         <ul class="package-includes">
-          <li>Kaikki Katsauksesta</li>
-          <li>Visuaalisen ilmeen päivitys</li>
+          <li>Kaikki Kokokuvasta</li>
+          <li>Valokuvaus (puolipäivä)</li>
+          <li>Verkkosivut (ländäri tai esittelysivu)</li>
           <li>Some-pohjat käyttövalmiina</li>
-          <li>Verkkosivun sisältöpäivitys</li>
-          <li>AI-työkalujen käyttöönotto viestintään</li>
+          <li>Tekstit yhteistyössä</li>
         </ul>
       </div>
 
       <div class="package-card fade-up">
         <p class="package-tag">Paketti 03</p>
-        <h3 class="package-name">Kumppanuus</h3>
-        <p class="package-price">1 200 €<span style="font-size:0.9rem;font-weight:400">/kk</span></p>
-        <p class="package-price-note">min. 3 kuukautta</p>
+        <h3 class="package-name">Silmäpari</h3>
+        <p class="package-price">alk. 50 €<span style="font-size:0.9rem;font-weight:400">/kk</span></p>
+        <p class="package-price-note">jatkuva tuki</p>
         <hr class="package-divider" />
         <p class="package-desc">
-          Jatkuva visuaalinen AD taskussasi. Brändi kehittyy, viestintä toimii – kuukausi kuukaudelta.
+          Pysyn kuvioissa. Päivitykset, sisältö, varmuuskopiot ja nopeat korjaukset – niin että sinä voit keskittyä muuhun.
         </p>
         <ul class="package-includes">
+          <li>Sivuston ylläpito ja päivitykset</li>
           <li>Kuukausittainen sisältöohjaus</li>
-          <li>Toteutustuki käytännön muutoksiin</li>
-          <li>Vastuullisuusviestinnän kehitys</li>
-          <li>Brändin jatkokehitys</li>
-          <li>Reagoin viesteihisi nopeasti</li>
+          <li>Nopea reagointi viesteihin</li>
+          <li>Brändin jatkokehitys tarpeen mukaan</li>
         </ul>
       </div>
 
@@ -843,29 +819,29 @@
     <div>
       <p class="section-label fade-up">Kenelle</p>
       <h2 class="forwhom-title fade-up">
-        Tämä on sinua<br/>varten, <em>jos...</em>
+        Tämä on<br/>sinua varten,<br/><em>jos...</em>
       </h2>
     </div>
     <div class="forwhom-cards">
       <div class="forwhom-card fade-up">
         <div class="forwhom-emoji">👀</div>
-        <h3 class="forwhom-card-title">Näet ongelmat, mutta et tiedä mistä aloittaa</h3>
-        <p class="forwhom-card-text">Verkkosivut tuntuvat vanhanaikaisilta, some ei kulje, brändi ei tunnu omalta.</p>
+        <h3 class="forwhom-card-title">Brändi ei tunnu omalta</h3>
+        <p class="forwhom-card-text">Logo on tehty pikaisesti, värit ovat sattumanvaraisia, eikä kokonaisuus kerro tarinaa.</p>
       </div>
       <div class="forwhom-card fade-up">
-        <div class="forwhom-emoji">🔧</div>
-        <h3 class="forwhom-card-title">Haluat tekoja, et toimintasuunnitelmia</h3>
-        <p class="forwhom-card-text">Konsulttiraportteja on jo mapissa. Tarvitset jonkun, joka myös toteuttaa ja ymmärtää koodia.</p>
+        <div class="forwhom-emoji">📷</div>
+        <h3 class="forwhom-card-title">Kuvat ovat puhelimesta tai kuvapankista</h3>
+        <p class="forwhom-card-text">Tiedät, että omat kuvat tekisivät eron – mutta kuvausbuukkaukset jäävät aina kesken.</p>
       </div>
       <div class="forwhom-card fade-up">
         <div class="forwhom-emoji">🌱</div>
-        <h3 class="forwhom-card-title">Kasvu on tavoitteena, täysremontti ei</h3>
-        <p class="forwhom-card-text">Et halua kaataa kaikkea ja aloittaa alusta – vaan kehittää sitä mikä toimii.</p>
+        <h3 class="forwhom-card-title">Haluat kestävää, et kertakäyttöistä</h3>
+        <p class="forwhom-card-text">Et halua tehdä kaikkea uudelleen vuoden päästä. Ajaton ilme ja sisältö joka kestää.</p>
       </div>
       <div class="forwhom-card fade-up">
-        <div class="forwhom-emoji">🤖</div>
-        <h3 class="forwhom-card-title">AI kiinnostaa, mutta se tuntuu kaukaiselta</h3>
-        <p class="forwhom-card-text">AI-työkalut voisivat tehostaa työnkulkuja, mutta tukka nousee pystyyn jo pelkästä ajatuksesta! Et tiedä mistä aloittaa.</p>
+        <div class="forwhom-emoji">🤝</div>
+        <h3 class="forwhom-card-title">Haluat yhden kumppanin, ei monta toimittajaa</h3>
+        <p class="forwhom-card-text">Valokuvaaja, graafikko ja webkoodari ovat kolme eri laskua. Tai sitten ei.</p>
       </div>
     </div>
   </section>
@@ -880,24 +856,21 @@
     <p class="cta-sub fade-up">
       Maksuton tutustumiskeskustelu – kerrot tilanteesta, minä kerron voinko auttaa. Ei myyntipuheita.
     </p>
-    <a href="mailto:tuulia@tuulianDigi.fi" class="cta-email fade-up">tuulia@tuuliandigi.fi</a>
+    <a href="mailto:tuulia@studioaina.fi" class="cta-email fade-up">tuulia@studioaina.fi</a>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <span>© 2025 Tmi Tuulia Kolehmainen</span>
-    <span>Visuaalinen viestintä · Digi · Brändi</span>
-    <a href="mailto:tuulia@tuuliandigi.fi">tuulia@tuuliandigi.fi</a>
+    <span>© 2026 Studio Aina · Tuulia Kolehmainen</span>
+    <span>Valokuvaus · Taitto · Brändi · Helsinki</span>
+    <a href="mailto:tuulia@studioaina.fi">tuulia@studioaina.fi</a>
   </footer>
 
   <script>
-    // Scroll fade-in
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
-          setTimeout(() => {
-            entry.target.classList.add('visible');
-          }, i * 80);
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
           observer.unobserve(entry.target);
         }
       });
